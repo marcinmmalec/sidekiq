@@ -3,7 +3,6 @@ ENV['SIDEKIQ_WEB_TESTING'] = '1'
 
 require 'sidekiq/web'
 Sidekiq::Web.app_url = '/'
-Sidekiq::Web.redirect_path = '/creators'
 
 Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
