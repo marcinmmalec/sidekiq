@@ -76,7 +76,7 @@ module Sidekiq
         send(:"#{attribute}=", value)
       end
 
-      attr_accessor :app_url, :redis_pool
+      attr_accessor :app_url, :redirect_path, :redis_pool
       attr_writer :locales, :views
     end
 
